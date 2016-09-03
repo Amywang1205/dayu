@@ -1,0 +1,352 @@
+/*全局字体设置*/
+body{
+	font: 16px/1.5 "微软雅黑";
+	color: #fff;
+}
+/*公共样式*/
+html,
+body,
+.wrap{
+	height: 100%;
+	overflow: hidden;
+}
+.wrap,
+.wrap .media_bg,
+.volume,
+.volume .bar{
+	position: relative;
+}
+.mask,
+.play,
+.sign,
+.media_area,
+.media,
+.controls,
+.volume .bar_wrap,
+.volume .btn,
+.volume .in_bar,
+.controls .bar_time,
+.sign_box{
+	position: absolute;
+}
+.sign div,
+.controls .play_btn,
+.con_play .item,
+.progress,
+.sign_box .item label,
+.sign_box .item input,
+.sign_box .item .msg{
+	float: left;
+}
+.volume,
+.controls .back,
+.controls .time{
+	float: right
+}
+.play,
+.sign div,
+.controls,
+.sign_box .btns button,
+.bubble{
+	cursor: pointer;
+}
+.mask{
+	width: 100%;
+	top: 0;
+	bottom: 0;
+}
+/*图片引入*/
+.volume{
+	background: url(../img/volume.png) no-repeat;
+}
+/*mask效果*/
+.mask{
+	background-color: rgba(0,0,0,.6);
+	z-index: 51;
+}
+/*背景视频的相关设置*/
+.wrap .media_bg{
+	top: 0;
+	z-index: 50;
+}
+/*播放按键*/
+.play{
+	width: 80px;
+	height: 80px;
+	left: 50%;
+	top: 50%;
+	margin: -40px 0px 0px -40px;
+	border-radius: 50%;
+	border: 2px solid #fff;
+	z-index: 100;
+}
+.play .triangle{
+	border: 24px solid transparent;
+	border-left-color: #fff;
+	margin: 15px 0px 0px 30px;
+}
+/*登录*/
+.sign{
+	height: 30px;
+	line-height: 30px;
+	right: 20px;
+	top: 10px;
+	z-index: 52;
+}
+.sign .line{
+	width: 1px;
+	height: 16px;
+	background-color: #fff;
+	margin: 7px;
+}
+.login{
+	display: none;
+}
+/*视频播放控件区*/
+.controls{
+	width: 100%;
+	height: 0px;
+	background-color: rgba(0,0,0,.7);
+	left: 0;
+	bottom: 0;
+	z-index: 60;
+}
+.controls .play_btn{
+	width: 30px;
+	height: 30px;
+	margin: 8px 0px 0px 2%;
+}
+.controls .con_pause{
+	border: 14px solid transparent;
+	border-left-color: #fff;
+	margin-top: 2px;
+	display: none;
+}
+.controls .con_play{
+	margin-top: 2px;
+	padding-top: 2px;
+	height: 26px;
+}
+.con_play .item{
+	width: 6px;
+	height: 26px;
+	background-color: #fff;
+	margin-right: 8px;
+}
+.progress{
+	height: 6px;
+	width: 81%;
+	background-color: #fff;
+	margin-left: 1%;
+	margin-top: 22px;
+}
+.progress .bar{
+	height: 100%;
+	background-color: #26B099;
+	width: 0px;
+}
+.volume{
+	width: 28px;
+	height: 27px;
+	margin-right: 1%;
+	margin-top: 12px;
+	/*background-position-y: -28px;*/
+}
+.volume .bar_wrap{
+	width: 30px;
+	height: 100px;
+	background-color: rgba(255,255,255,.4);
+	border-radius: 5px 5px 0px 0px;
+	left: -6px;
+	top: -112px;
+	display: none;
+}
+.volume .txt{
+	font-size: 12px;
+	line-height: 14px;
+	text-align: center;
+}
+.volume .bar{
+	width: 6px;
+	height: 80px;
+	background-color: #fff;
+	margin-left: 12px;
+	border-radius: 5px;
+	z-index: 85;
+}
+.volume .btn{
+	width: 14px;
+	height: 14px;
+	border-radius: 50%;
+	background-color: #fff;
+	left: -4px;
+	z-index: 88;
+}
+.volume .in_bar{
+	width: 100%;
+	/*height: 50px;*/
+	bottom: 0;
+	left: 0;
+	background-color: #26B099;
+	z-index: 86;
+}
+.controls .back{
+	margin-right: 2%;
+	margin-top: 10px;
+}
+.controls .t{
+	line-height: 50px;
+	margin-left: 2%;
+}
+.controls .bar_time{
+	font-size: 12px;
+	z-index: 87;
+}
+/*登录框*/
+.sign_box{
+	left: 50%;
+	top: 50%;
+	width: 580px;
+	height: 320px;
+	background-color: rgba(255,255,255,.8);
+	z-index: 200;
+	border-radius: 10px;
+	margin: -150px 0px 0px -290px;
+	text-align: center;
+	color: #333;
+	display: none;
+}
+.sign_box .head{
+	height: 50px;
+	line-height: 50px;
+	font-size: 18px;
+}
+.sign_box .item{
+	height: 80px;
+	padding-left: 100px;
+}
+.sign_box .item label{
+	width: 80px;
+	line-height: 60px;
+	text-align: left;
+}
+.sign_box .item input{
+	width: 260px;
+	height: 28px;
+	padding-left: 20px;
+	margin-top: 14px;
+	border-radius: 5px;
+	border: 1px solid #999;
+	box-shadow: inset 5px 5px 5px #f1f1f1;
+}
+.sign_box .item .msg{
+	color: red;
+	font-size: 12px;
+	width: 260px;
+	text-align: left;
+	padding-top: 15px;
+	display: none;
+}
+.sign_box .btns{
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+.sign_box .btns button{
+	width: 100px;
+	height: 30px;
+	border: 1px solid #26B099;
+	margin-right: 20px;
+	color: #26B099;
+	border-radius: 8px;
+	font-size: 14px;
+}
+.sign_box .to_sign{
+	font-size: 12px;
+	color: #999;
+}
+.sign_box .note{
+	padding-top: 110px;
+	color: #26B099;
+	display: none;
+}
+.sign_box .note .txt{
+	font-size: 28px;
+}
+.sign_box .note .tips{
+	font-size: 12px;
+	color: #333;
+	margin-top: 10px;
+}
+/*错误时*/
+.sign_box .error input{
+	border-color:red;
+}
+.sign_box .error .msg{
+	display: block;
+}
+/*登录层弹出时,遮罩层的设置*/
+.sign_mask{
+	background-color: rgba(0,0,0,.9);
+	z-index: 190;
+}
+/*泡泡*/
+.parts{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.bubble{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 200px;
+	height: 200px;
+	background-color: rgba(255,255,255,0.2);
+	border-radius: 50%;
+	box-shadow: inset 8px -3px 10px 3px rgba(255,255,255,.3); 
+	z-index: 100;
+}
+.bubble .high_light{
+	width: 18px;
+	height: 10px;
+	background-color: rgba(255,255,255,.5);
+	border-radius: 50%;
+	position: absolute;
+	right: 40px;
+	top: 30px;
+	transform: rotate(50deg);
+}
+.bubble .txt{
+	display: block;
+	color: #fff;
+	line-height: 200px;
+	text-align: center;
+}
+/*hover效果*/
+.play:hover{
+	border-color: #26b099;
+}
+.play:hover .triangle{
+	border-left-color: #26b099;
+}
+.volume .btn:hover{
+	background-color: #26B099;
+	box-shadow: 0px 0px 1px 1px #26B099;
+}
+.sign_box .item .active{
+	border-color: #26B099;
+	box-shadow: 0px 0px 20px 3px #26B099;
+}
+.sign_box .btns button:hover{
+	background-color: #26B099;
+	color: #fff;
+}
+.sign_box .to_sign:hover,
+.logout:hover,
+.bubble .txt:hover,
+.sign .sign_in:hover,
+.sign .sign_up:hover{
+	color: #26B099;
+}

@@ -1,0 +1,116 @@
+/*字体设置*/
+body{
+	font: 16px/1.5 "微软雅黑";
+	color: #333;
+}
+/*公共样式部分*/
+.logo,
+.line,
+.head .txt,
+.inputs .item label,
+.inputs .item input,
+.inputs .item .msg{
+	float: left;
+}
+.content .btns button{
+	cursor: pointer;
+}
+
+.wrap{
+	width: 700px;
+	margin: 0 auto;
+	padding-top: 100px;
+}
+/*头部*/
+.head{
+	height: 40px;
+	width: 100%;
+}
+.logo{
+	background: url(../img/logo.png) no-repeat;
+	height: 40px;
+	width: 156px;
+}
+.head .line{
+	width: 4px;
+	height: 30px;
+	background-color: #26B099;
+	margin: 5px 12px;
+}
+.head .txt{
+	font-size: 22px;
+	line-height: 40px;
+	color: #26B099;
+}
+
+/*content区*/
+.content{
+	padding-top: 50px;
+}
+.inputs .item{
+	height: 80px;
+	padding-left: 20px;
+}
+.inputs .item label{
+	width: 80px;
+	line-height: 60px;
+	text-align: left;
+}
+.inputs .item input{
+	width: 260px;
+	height: 28px;
+	padding-left: 20px;
+	margin-top: 14px;
+	border-radius: 5px;
+	border: 1px solid #999;
+	box-shadow: inset 5px 5px 5px #f1f1f1;
+}
+.inputs .item .msg{
+	color: red;
+	font-size: 12px;
+	width: 260px;
+	text-align: left;
+	padding-top: 15px;
+	margin-left: 20px;
+	display: none;
+}
+.content .btns{
+	margin-top: 30px;
+}
+.content .btns button{
+	display: inline-block;
+	vertical-align: top;
+	width: 100px;
+	height: 30px;
+	border: 1px solid #26B099;
+	margin-left: 170px;
+	color: #26B099;
+	border-radius: 8px;
+	font-size: 14px;
+	background-color: #fff;
+}
+.btns .to_logo{
+	color: #333;
+	font-size: 12px;
+	line-height: 44px;
+	margin-left: 20px;
+}
+/*错误时*/
+.inputs .error input{
+	border-color:red;
+}
+.inputs .error .msg{
+	display: block;
+}
+/*hover和active效果*/
+.inputs .item .active{
+	border-color: #26B099;
+	box-shadow: 0px 0px 20px 3px #26B099;
+}
+.btns button:hover{
+	background-color: #26B099;
+	color: #fff;
+}
+.btns .to_logo:hover{
+	color: #26B099;
+}

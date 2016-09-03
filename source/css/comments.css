@@ -1,0 +1,155 @@
+/*公共样式*/
+.logo,
+.head .line,
+.head .txt,
+.foot .txtarea,
+.foot .btn{
+	float: left;
+}
+.nav{
+	float: right;
+}
+html,
+body{
+	height: 100%;
+	overflow: hidden;
+}
+body{
+	font: 14px/1.5 "微软雅黑";
+}
+
+.wrap{
+	width: 1100px;
+	margin: 20px auto 0px;
+	height: 100%;
+	overflow: hidden;
+}
+/*头部*/
+.head{
+	height: 40px;
+	width: 100%;
+}
+.logo{
+	background: url(../img/logo.png) no-repeat;
+	height: 40px;
+	width: 156px;
+}
+.head .line{
+	width: 4px;
+	height: 30px;
+	background-color: #26B099;
+	margin: 5px 12px;
+}
+.head .txt{
+	font-size: 22px;
+	line-height: 40px;
+	color: #26B099;
+}
+.nav{
+	height: 40px;
+	line-height: 40px;
+}
+.nav .item{
+	display: inline-block;
+	vertical-align: bottom;
+	margin-right: 10px;
+	color: #333;
+}
+.nav .item:hover{
+	color: #26B099;
+}
+/*评论展示区*/
+.content{
+	margin-top: 20px;
+	width: 1100px;
+	position: absolute;
+	top: 70px;
+	bottom: 18px;
+	border: 1px solid #26B099;
+	border-radius: 20px;
+}
+.display{
+	margin: 10px 20px 0px;
+}
+.display .item{
+	border-bottom: 1px solid #26B099;
+}
+.display .name{
+	font-size: 16px;
+	font-weight: bold;
+}
+.display .time{
+	font-size: 12px;
+	color: #969696;
+	float: right;
+	margin-right: 20px;
+	margin-top: 10px;
+}
+.display .txt{
+	line-height: 30px;
+	text-indent: 2em;
+}
+.foot{
+	position: absolute;
+	bottom: 10px;
+	padding-left: 35px;
+	height: 42px;
+}
+.foot .txtarea{
+	width: 900px;
+	padding: 10px;
+	line-height: 18px;
+	resize: none;
+	height: 20px;
+	border: 1px solid #26B099;
+	border-radius: 10px;
+	margin-right: 20px;
+}
+.foot .btn{
+	width: 80px;
+	height: 38px;
+	border: 1px solid #26B099;
+	background-color: #fff;
+	border-radius: 10px;
+	margin-top: 2px;
+	cursor: pointer;
+	font-size: 14px;
+	color: #26B099;
+}
+/*滚动条*/
+.bar{
+	width: 20px;
+	height: 20px;
+	background-color: #26B099;
+	position: absolute;
+	top: 10px;
+	right: -10px;
+	border-radius: 50%;
+	cursor: pointer;
+	display: none;
+}
+/*泡泡*/
+.bubble{
+	position: absolute;
+	/*left: 0;
+	bottom: 0;*/
+	/*width: 100px;
+	height: 100px;*/
+	background-color: rgba(38,176,153,0.1);
+	border-radius: 50%;
+	box-shadow: inset 8px -3px 10px 3px rgba(38,176,153,.2); 
+}
+.bubble .high_light{
+	width: 18px;
+	height: 10px;
+	background-color: rgba(255,255,255,.7);
+	border-radius: 50%;
+	position: absolute;
+	right: 20%;
+	top: 20%;
+	transform: rotate(50deg);
+}
+.foot .btn:hover{
+	background-color: #26B099;
+	color: #fff;
+}
