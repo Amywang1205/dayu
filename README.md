@@ -9,7 +9,7 @@
     + 数据库搭建：Mongodb的使用
     + 使用webpack Loader中的babel把es6编译成es5
     + 使用webpack 进行代码压缩
-    基于Html5，Css3
+    基于Html5&Css3
     + 静态页面效果实现
     + Css3个别页面交互效果的实现
     + 播放器的实现
