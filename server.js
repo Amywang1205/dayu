@@ -1,16 +1,16 @@
 /*模块引入及初始化入口文件*/
 //模块引入
 var express = require('express'),
-	mongodb = require('mongodb'),
-	bodyParser = require('body-parser'),
-	swig = require('swig'),
-	fs = require('fs'),
-	tools = require('./serverTools.js'),
+    mongodb = require('mongodb'),
+    bodyParser = require('body-parser'),
+    swig = require('swig'),
+    fs = require('fs'),
+    tools = require('./serverTools.js'),
 //初始化入口文件
-	app = express(),
-	mongodbClient = mongodb.MongoClient,
+    app = express(),
+    mongodbClient = mongodb.MongoClient,
 //变量
-	db = null;
+    db = null;
 
 /*swig模板引擎设置*/
 app.engine('html', swig.renderFile);
